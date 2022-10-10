@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,300;1,900&display=swap');
+
+    body {
+        background-color: #fafafa;
+    }
+
+    .container {
+        background-color: #fff;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 10px;
+        border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+        border-radius: 1px;
+        margin-top: 30px;
+    }
+
+    .container input {
+        border-radius: 3px;
+        background: #fafafa;
+        border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+        box-sizing: border-box;
+        margin-top: 3px;
+        padding-top: 4px;
+        padding-right: 0px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        outline: none;
+    }
+
+    .container img {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    ::placeholder {
+        font-size: 8px;
+        position: absolute;
+        top: 31%;
+        font-family: mulish;
+    }
+
+    .container button {
+        background-color: #b2dffc;
+        color: #fff;
+        border: 0 solid #b2dffc;
+        margin-top: 7px;
+        font-family: mulish;
+        font-size: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 72px;
+        padding-right: 72px;
+        border-radius: 2px;
+    }
+
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: mulish;
+        color: rgba(var(--b6a, 219, 219, 219), 1);
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .separator::before,
+    .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 0.5px solid rgba(var(--b6a, 219, 219, 219), 1);
+    }
+
+    .separator:not(:empty)::before {
+        margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after {
+        margin-left: .25em;
+    }
+
+    .container a {
+        color: #00376b;
+        color: rgba(var(--fe0, 0, 55, 107), 1);
+        font-size: 9px;
+        margin-top: 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .container2 {
+        background-color: #fff;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 10px;
+        border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+        border-radius: 1px;
+        margin-top: 10px;
+    }
+
+    .container2 a {
+        color: black;
+        font-size: 9px;
+        text-align: center;
+        font-family: mulish;
+        text-decoration: none;
+
+    }
+
+    .blueText {
+        color: rgba(var(--d69, 0, 149, 246), 1);
+    }
+
+    .paregraph {
+        line-height: 10px;
+        color: #262626;
+        font-size: 10px;
+        text-align: center;
+        font-family: mulish;
+    }
+
+    .app-img img {
+        height: 25px;
+        width: 90px;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="container">
+            <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png"
+                alt="instagramImage" /><br>
+            <input type="text" placeholder="Phone number, username, or email" /><br>
+            <input type="password" placeholder="Password" />
+            <button>Log In</button>
+            <div class="separator">OR</div>
+            <a href="https://www.instagram.com/">Forgot password?</a>
+        </div>
+        <div class="container2">
+            <a href="https://www.instagram.com/">Don't have an account? <span class="blueText">Sign up</span></a>
+        </div>
+        <p class="paregraph">Get the app.</p>
+        <div class="app-img">
+            <img
+                src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png" />
+            <img
+                src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" />
+
+        </div>
+    </center>
+</body>
+
+</html>
